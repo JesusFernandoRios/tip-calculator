@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json" />
     <!-- ios support -->
     <link rel="apple-touch-icon" href="images/icons/icon-72x72.png" />
@@ -18,6 +19,22 @@
     <title>Tip Calculator</title>
 </head>
 <body>
-    
+    <div class="container">
+        
+        <h1>Tip Calculator</h1>
+        <label for="totalBill">How much was the bill today bbs?</label>
+        <br>
+        <input type="number" name="totalBill" placeholder="$">
+        <br>
+        <select class="percentage" name="percent" required>
+            <option disabled selected>Select a percentage</option>
+            <option value="0.25">25%</option>
+            <option value="0.20">20%</option>
+            <option value="0.15">15%</option>
+            <option value="0.10">10%</option>
+        </select>
+
+        <button class="btn" type="submit">Get percentage</button>
+    </div>
 </body>
 </html>
