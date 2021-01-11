@@ -25,14 +25,14 @@
         <div class="calculator">
             <h1>Tip Calculator</h1>
             <h3 for="totalBill">How much was the bill today bbs?</h3>
-            <input type="number" name="totalBill" placeholder="$">
+            <input id="totalBill" type="number" name="totalBill" placeholder="$">
             <br>
             <select class="percentage" name="percent" required>
                 <option disabled selected>Select a percentage</option>
-                <option value="0.25">25%</option>
-                <option value="0.20">20%</option>
-                <option value="0.15">15%</option>
-                <option value="0.10">10%</option>
+                <option value="25">25%</option>
+                <option value="20">20%</option>
+                <option value="15">15%</option>
+                <option value="10">10%</option>
             </select>
         </div>
 
@@ -44,5 +44,6 @@
 
         <button class="btn" type="submit">Calculate!</button>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
