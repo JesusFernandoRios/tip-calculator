@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="manifest" href="manifest.json" />
     <!-- ios support -->
     <link rel="apple-touch-icon" href="images/icons/icon-72x72.png" />
@@ -20,21 +21,28 @@
 </head>
 <body>
     <div class="container">
-        
-        <h1>Tip Calculator</h1>
-        <label for="totalBill">How much was the bill today bbs?</label>
-        <br>
-        <input type="number" name="totalBill" placeholder="$">
-        <br>
-        <select class="percentage" name="percent" required>
-            <option disabled selected>Select a percentage</option>
-            <option value="0.25">25%</option>
-            <option value="0.20">20%</option>
-            <option value="0.15">15%</option>
-            <option value="0.10">10%</option>
-        </select>
 
-        <button class="btn" type="submit">Get percentage</button>
+        <div class="calculator">
+            <h1>Tip Calculator</h1>
+            <h3 for="totalBill">How much was the bill today bbs?</h3>
+            <input type="number" name="totalBill" placeholder="$">
+            <br>
+            <select class="percentage" name="percent" required>
+                <option disabled selected>Select a percentage</option>
+                <option value="0.25">25%</option>
+                <option value="0.20">20%</option>
+                <option value="0.15">15%</option>
+                <option value="0.10">10%</option>
+            </select>
+        </div>
+
+        <section class="tipOutput">
+            <h3>The tip is:</h3>
+            <h3 class="tip">$</h3>
+        </section>
+        
+
+        <button class="btn" type="submit">Calculate!</button>
     </div>
 </body>
 </html>
