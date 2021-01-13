@@ -11,4 +11,8 @@ tipBtn.addEventListener('click', function() {
 
     let tip = document.querySelector(".tip");
     tip.innerText = "$" + tipAmount.toFixed(2)
+
+    const total = cost + tipAmount
+    let finalTotal = document.querySelector(".total")
+    finalTotal.innerText = `$ ${total.toFixed(2)} :)`
 })
