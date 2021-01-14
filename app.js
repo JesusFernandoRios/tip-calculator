@@ -19,12 +19,14 @@ tipBtn.addEventListener('click', function() {
     let percent = Number(tipPercent.value) / 100
     let tipAmount = cost * percent;
     const total = cost + tipAmount;
-    
+
     let tip = document.querySelector(".tip");
     let finalTotal = document.querySelector(".total");
-    // tip.innerText = "Please enter the bill amout."
     
     tip.innerText = "$" + tipAmount.toFixed(2);
     finalTotal.innerText = `$ ${total.toFixed(2)} :)`
+    tip.innerText = "Please enter the bill amout."
+    
+    
     
 })
