@@ -2,7 +2,7 @@
 body {
     background-color: #4158D0;
     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-    height: 84vh;
+    height: 100vh;
     font-family: 'Roboto', sans-serif;
 
 }
@@ -61,7 +61,7 @@ input {
     outline: none;
 }
 
-@media (max-width:375px) {
+@media (max-width:800px) {
     body {
         height: 100vh;
     }
