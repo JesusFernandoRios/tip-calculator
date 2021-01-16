@@ -25,7 +25,7 @@ tipBtn.addEventListener('click', function() {
     
     tip.innerText = "$" + tipAmount.toFixed(2);
     finalTotal.innerText = `$ ${total.toFixed(2)} :)`
-    tip.innerText = "Please enter the bill amout."
+    
     
     
     
